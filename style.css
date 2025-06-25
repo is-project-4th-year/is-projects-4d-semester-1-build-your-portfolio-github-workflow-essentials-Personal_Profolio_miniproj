@@ -1,0 +1,26 @@
+/* Very basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f0f0f0;
+}
+
+.nav-links a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
