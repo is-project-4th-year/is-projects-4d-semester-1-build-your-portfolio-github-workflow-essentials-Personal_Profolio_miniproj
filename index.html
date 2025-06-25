@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Elvis Makara's personal portfolio website showcasing projects and skills.">
+    <meta name="keywords" content="Elvis Makara, portfolio, web developer, ml engineer, projects, skills">
+    <meta name="author" content="Elvis Makara">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <title>Elvis Makara - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>Elvis Makara</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm Elvis Makara</h1>
+                <p class="hero-subtitle">Aspiring Machine Learning Engineer, Web Developer & Cybersecurity Enthusiast</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>More content coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <p>Skills showcase coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <p>Projects coming soon...</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Contact form coming soon...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Elvis Makara. All rights reserved.</p>
+            <script>
+                document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
