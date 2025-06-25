@@ -23,4 +23,42 @@ nav {
     text-decoration: none;
     color: #333;
 }
+/* About Section */
+.about-section {
+  background: #f8f9fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
 
+.tagline {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #4361ee;
+  margin: 1rem 0;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
