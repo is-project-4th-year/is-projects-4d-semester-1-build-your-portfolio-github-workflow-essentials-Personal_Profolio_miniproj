@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hawiana Abebe Bedada | Portfolio</title>
+    <link href="css/landing.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, <br/> I'm <span>Hawiana Abebe </span></h1>
+            <p>A passionate [Your Profession] specializing in [your skills]. I create beautiful, functional solutions that help businesses grow and succeed in the digital world.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+        <div class="hero-image">
+            <!-- Replace with your actual image path -->
+            <img src="your-photo.jpg" alt="Your Name">
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Who I Am</h3>
+                <p>I'm a creative professional with [X] years of experience in [your field]. I specialize in [specific skills or services] and have helped numerous clients achieve their goals through innovative solutions.</p>
+                <p>My approach combines technical expertise with a keen eye for design, ensuring that every project I work on is not only functional but also visually appealing and user-friendly.</p>
+                <p>When I'm not working, you can find me [personal interests or hobbies], which help me stay inspired and bring fresh perspectives to my work.</p>
+            </div>
+            <div class="skills">
+                <h3>My Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Web Design</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>UI/UX</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Graphic Design</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- You can add more sections below for projects, contact, etc. -->
+    
+    <section class="steps">
+        <h3>Follow These 3 Simple Steps To Work With Me!</h3>
+        
+        <div class="steps-list">
+            <div class="step">
+                <h4>1. Contact Me</h4>
+                <p>Reach out through my contact form or email to discuss your project needs.</p>
+            </div>
+            
+            <div class="step">
+                <h4>2. Project Planning</h4>
+                <p>We'll define the scope, timeline, and deliverables for your project.</p>
+            </div>
+            
+            <div class="step">
+                <h4>3. Let's Build!</h4>
+                <p>I'll bring your vision to life with regular updates and collaboration.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // You can add more JavaScript functionality here
+    </script>
+
+    <footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-heading">Connect With Me</h3>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h3 class="footer-heading">Contact Info</h3>
+            <p><i class="fas fa-envelope"></i> iamhawiana@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +254 742063263</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Hawiana Abebe. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+    /* Footer Styles */
+    .site-footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 3rem 0 0;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 0 auto;
+       padding: 0 3rem;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 250px;
+    }
+    
+    .footer-heading {
+        color: var(--headline1);
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+    }
+    
+    .footer-heading::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        width: 50px;
+        height: 2px;
+        background-color: var(--headline1);
+    }
+    
+    .footer-links {
+        list-style: none;
+    }
+    
+    .footer-links li {
+        margin-bottom: 0.5rem;
+    }
+    
+    .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+        color: var(--button);
+    }
+    
+    .social-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .social-links a {
+        color: #ffffff;
+        font-size: 1.5rem;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #8a2be2;
+    }
+    
+    .footer-section p {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 1.5rem 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-top: 2rem;
+    }
+    
+    /* Font Awesome icons */
+    .fas, .fab {
+        width: 20px;
+        text-align: center;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: column;
+            padding: 0 1.5rem;
+        }
+        
+        .footer-section {
+            margin-bottom: 2.5rem;
+        }
+    }
+</style>
+
+<script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<!-- Add this in your head section to load Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</body>
+</html>
