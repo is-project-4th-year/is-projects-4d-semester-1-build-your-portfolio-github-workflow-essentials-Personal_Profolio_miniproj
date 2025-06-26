@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faith Njuguna - Portfolio</title>
+  <style>
+    :root {
+      --primary: #511919;
+      --background: #f4f4f4;
+      --text: #333;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .about img {
+      max-width: 200px;
+      border-radius: 50%;
+      border: 4px solid var(--primary);
+    }
+
+    .about div {
+      flex: 1;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .about {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Faith Njuguna</h1>
+    <p>Aspiring Software Developer & Tech Enthusiast</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="pinball.jpg" alt="Faith Njuguna" />
+      <div>
+        <p>Hello! I'm Faith, a passionate computer science student with a love for building useful, creative digital solutions. I enjoy learning new technologies and applying them in real-world projects.</p>
+        <p>My current focus is on mobile application development and machine learning. This portfolio showcases some projects that I’ve been working on.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Cataract Detection App (InSight) - Currently ongoing</h3>
+        <p>A machine learning-powered mobile app to help with early cataract detection using image classification.</p>
+      </div>
+      <div class="card">
+        <h3>Team Profile Website - The Repo Rangers</h3>
+        <p>A responsive site built collaboratively to showcase team members using GitHub issues, boards and pull requests.</p>
+      </div>
+      <div class="card">
+        <h3>BridgingHealth Platform</h3>
+      <p>A health-tech solution developed to connect underserved communities with nearby clinics and medical services. </p>
+    </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:faith.njuguna@strathmore.edu">faith.njuguna@strathmore.edu</a></p>
+    <p>💻 GitHub: <a href="https://github.com/nyambura-pov" target="_blank">nyambura-pov</a></p>
+  </section>
+
+  <footer>
+    <p> </p>
+  </footer>
+</body>
+</html>
