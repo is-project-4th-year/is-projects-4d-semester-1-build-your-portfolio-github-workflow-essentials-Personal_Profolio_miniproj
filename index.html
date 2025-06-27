@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
     <title>Elvis Makara - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header>
@@ -41,13 +43,55 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Hello, I'm Elvis Makara</h1>
-                <p class="hero-subtitle">Aspiring Machine Learning Engineer, Web Developer & Cybersecurity Enthusiast</p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            <div class="hero-container">
+                <!-- Hero Content -->
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="images/profile-photo.jpg" alt="Elvis Wahome" class="profile-photo">
+                        <!-- <div class="profile-placeholder">
+                            <span class="profile-initials">EWM</span>
+                        </div> -->
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Elvis Wahome Makara</span>
+                    </h1>
+                    <p class="hero-subtitle">Aspiring <span class="highlight">Full-Stack Developer & Machine Learning
+                            Engineer </span> & Cyber Security Enthusiast</p>
+                    <p class="hero-description">
+                        I'm a passionate computer science student with a love for creating innovative web solutions.
+                        Currently pursuing my degree while building exciting projects and learning new technologies.
+                    </p>
                 </div>
+
+                <!-- Hero Buttons -->
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="arrow">→</i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="email-icon">✉</i>
+                    </a>
+                </div>
+
+                <div class="hero-social">
+                    <a href="https://github.com/Pahom21" class="social-link" target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="www.linkedin.com/in/elvis-makara-6a824b283" class="social-link" target="_blank">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:makarawahome@gmail.com" class="social-link">
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
             </div>
         </section>
 
@@ -96,4 +140,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
