@@ -53,3 +53,21 @@ nav a {
     padding: 40px 10px;
   }
 }
+.about {
+  background: #fff;
+  color: #333;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
