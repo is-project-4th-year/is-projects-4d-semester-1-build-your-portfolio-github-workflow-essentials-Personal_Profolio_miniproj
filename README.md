@@ -112,10 +112,9 @@ ________________________________________
 As you work on your portfolio, please update this README.md file with the following details:
 
 - **Your deployed portfolio link:**  
-  Add the URL to your live site on GitHub Pages here.
+  (Gabriel Mungai's portfolio)[https://is-project-4th-year.github.io/Gabriel-Mungai-s-portfolio-project/]
 
 - **Screenshots:**  
-  Add screenshots or images of your portfolio to showcase your work.  
-  Example markdown for adding an image:  
-  ```markdown
-  ![Homepage screenshot](images/homepage.png)
+  [Homepage screenshot](images/Homepage.png)
+  [About Me screenshot](images/About%20Me.png)
+  [Contact page screenshot](images/Contact%20Page.png)
