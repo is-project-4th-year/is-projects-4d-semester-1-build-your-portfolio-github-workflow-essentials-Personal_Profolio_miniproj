@@ -2,7 +2,7 @@
 
 ## 1. Student Details
 
-- **Full Name**: Elvis Ernest Otengo
+- **Full Name**: Elvis Ernest Oteng'o
 - **Admission Number**: 150028
 - **GitHub Username**: @Elvis321
 - **Email**: elvis.oteng'o@strathmore.edu
