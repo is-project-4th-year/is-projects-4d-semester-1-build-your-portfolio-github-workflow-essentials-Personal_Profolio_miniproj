@@ -1,6 +1,7 @@
 # ✅ Individual GitHub Portfolio Project: Student Checklist
 ________________________________________
 
+# Gabriel Mungai's Content Portfolio
 ## Project Overview
 
 You are required to create a personal portfolio website and manage your development process using Git and GitHub. This hands-on assignment introduces you to real-world workflows: issue tracking, feature branching, commits, pull requests, milestone setting, and deployment via GitHub Pages.
