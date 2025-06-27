@@ -13,17 +13,19 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f5f5;
+      background: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
     }
 
-    /* Navbar */
     header {
-      background-color: #1e1e2f;
+      background-color: #111827;
       color: white;
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
-      z-index: 10;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .navbar {
@@ -33,33 +35,102 @@
     }
 
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: bold;
+      color: #38bdf8;
     }
 
     .nav-links {
       display: flex;
       list-style: none;
-      gap: 1.5rem;
+      gap: 2rem;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #38bdf8;
     }
 
     .nav-toggle {
       display: none;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       cursor: pointer;
+    }
+
+    .hero-section {
+      background: linear-gradient(to right, #3b82f6, #6366f1);
+      color: rgb(0, 0, 0);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .hero-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      max-width: 1100px;
+      gap: 3rem;
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .hero-image img {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid rgb(50, 50, 50);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-text {
+      flex: 2;
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero-text .tagline {
+      font-size: 1.4rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .fun-fact {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #000000;
+    }
+
+    .quote {
+      border-left: 4px solid rgb(0, 0, 0);
+      padding-left: 1rem;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #000000;
     }
 
     @media (max-width: 768px) {
       .nav-links {
         display: none;
         flex-direction: column;
-        background-color: #1e1e2f;
+        background-color: #111827;
         position: absolute;
         top: 70px;
         right: 0;
@@ -73,30 +144,58 @@
 
       .nav-toggle {
         display: block;
+        color: white;
+      }
+
+      .hero-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.3rem;
+      }
+
+      .hero-image img {
+        width: 200px;
+        height: 200px;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">Brian's Portfolio</div>
       <div class="nav-toggle" onclick="toggleNav()">☰</div>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- JavaScript for Mobile Nav -->
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-image">
+        <img src="me.jpg" alt="Brian's Photo">
+      </div>
+      <div class="hero-text">
+        <h1>Hello, I'm Brian Kyalo</h1>
+        <p class="tagline"> Creative Developer | Passionate about building intelligent systems using AI & Machine Learning </p>
+        <p class="fun-fact"> Fun fact: Blockchain is the Future. </p>
+        <p class="quote"> "Their ignorance is your opportunity." ~ Michael Saylor </p>
+      </div>
+    </div>
+  </section>
+
   <script>
     function toggleNav() {
-      const navLinks = document.getElementById("nav-links");
-      navLinks.classList.toggle("active");
+      document.getElementById("nav-links").classList.toggle("active");
     }
   </script>
 
