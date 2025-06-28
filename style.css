@@ -76,15 +76,15 @@ header {
 .about {
   background-color: #ffffff;
   padding: 4rem 1rem;
- /*opacity: 0;
+ opacity: 0;
   transform: translateY(20px);
-  transition: all 0.8s ease-out;*/
+  transition: all 0.8s ease-out;
 }
 
-/*.about.fade-in {
+.about.fade-in {
   opacity: 1;
   transform: translateY(0);
-}*/
+}
 
 .about-content {
   max-width: 1000px;
