@@ -184,6 +184,76 @@
         width: 100%;
       }
     }
+
+    .footer {
+  background-color: #111827;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-text {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #38bdf8; /* cyan for calm and modern vibe */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+.github img {
+  filter: invert(100%);
+}
+.linkedin img,
+.twitter img {
+  filter: grayscale(0%) brightness(150%);
+}
+.email img {
+  filter: brightness(200%) contrast(120%);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-text {
+    font-size: 1rem;
+  }
+  .social-icons {
+    flex-wrap: wrap;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -216,6 +286,29 @@
       </div>
     </div>
   </section>
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-text">Let's connect 🚀</p>
+    <div class="social-icons">
+      <a href="https://github.com/brian-kyalo" target="_blank" class="social-icon github" title="GitHub">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/brian-kyalo" target="_blank" class="social-icon linkedin" title="LinkedIn">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+      </a>
+      <a href="mailto:brianmuthama15@email.com" class="social-icon email" title="Email">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
+      </a>
+      <a href="https://twitter.com/RealKyalo" target="_blank" class="social-icon twitter" title="Twitter">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter">
+      </a>
+    </div>
+    <p class="copyright">© 2025 Brian Kyalo. All Rights Reserved.</p>
+  </div>
+</footer>
+
 
   <script>
     function toggleNav() {
