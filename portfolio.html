@@ -160,6 +160,29 @@
         width: 200px;
         height: 200px;
       }
+
+    }
+     .cta-button {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: #111827;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #374151;
+    }
+
+    @media (max-width: 768px) {
+      .cta-button {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -186,9 +209,10 @@
       </div>
       <div class="hero-text">
         <h1>Hello, I'm Brian Kyalo</h1>
-        <p class="tagline"> Creative Developer | Passionate about building intelligent systems using AI & Machine Learning </p>
-        <p class="fun-fact"> Fun fact: Blockchain is the Future. </p>
-        <p class="quote"> "Their ignorance is your opportunity." ~ Michael Saylor </p>
+        <p class="tagline">Creative Developer | Passionate about building intelligent systems using AI & Machine Learning</p>
+        <p class="fun-fact">Fun fact: Blockchain is the Future.</p>
+        <p class="quote" id="quote-text">"Their ignorance is your opportunity." ~ Michael Saylor</p>
+        <button class="cta-button" onclick="changeQuote()">Change Quote</button>
       </div>
     </div>
   </section>
@@ -196,6 +220,21 @@
   <script>
     function toggleNav() {
       document.getElementById("nav-links").classList.toggle("active");
+    }
+
+    const quotes = [
+      `"Their ignorance is your opportunity." ~ Michael Saylor`,
+      `"The best way to predict the future is to create it." ~ Peter Drucker`,
+      `"Simplicity is the soul of efficiency." ~ Austin Freeman`,
+      `"Code is like humor. When you have to explain it, it’s bad." ~ Cory House`,
+      `"First, solve the problem. Then, write the code." ~ John Johnson`,
+      `"It always seems impossible until it's done." ~ Nelson Mandela`
+    ];
+
+    function changeQuote() {
+      const quoteElement = document.getElementById("quote-text");
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      quoteElement.textContent = quotes[randomIndex];
     }
   </script>
 
