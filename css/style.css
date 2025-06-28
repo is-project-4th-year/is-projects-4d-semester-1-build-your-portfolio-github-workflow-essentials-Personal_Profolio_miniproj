@@ -548,6 +548,201 @@ footer {
     font-size: var(--font-size-lg);
 }
 
+/* Skills Section */
+.skills {
+    padding: var(--spacing-2xl) 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.skills-intro {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.skills-intro p {
+    font-size: var(--font-size-lg);
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills-categories {
+    display: grid;
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.skill-category {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.category-title {
+    font-size: var(--font-size-2xl);
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.category-icon {
+    font-size: 1.5em;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background: var(--background-light);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border-left: 4px solid var(--primary-color);
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.tech-symbol {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}
+
+.skill-info {
+    flex: 1;
+}
+
+.skill-info h4 {
+    font-size: var(--font-size-lg);
+    color: var(--secondary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-sm);
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    border-radius: 4px;
+    transition: width 2s ease-in-out;
+    animation: progressAnimation 2s ease-in-out;
+}
+
+.skill-level {
+    font-size: var(--font-size-small);
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.tool-item {
+    background: var(--background-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+    border: 2px solid transparent;
+}
+
+.tool-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    background: white;
+}
+
+.tool-name {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.skills-footer {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.learning-note {
+    font-size: var(--font-size-lg);
+    color: var(--text-light);
+}
+
+.learning-note strong {
+    color: var(--primary-color);
+}
+
+@keyframes progressAnimation {
+    from { width: 0%; }
+    to { width: var(--target-width); }
+}
+
+/* Responsive Design for Skills */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .category-title {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-sm);
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.7; }
