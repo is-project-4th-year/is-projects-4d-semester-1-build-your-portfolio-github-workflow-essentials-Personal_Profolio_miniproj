@@ -254,6 +254,58 @@
   }
 }
 
+.section-divider {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0% 100%);
+  margin-bottom: -1px;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 850px;
+  margin: auto;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.about-section h2::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #38bdf8;
+  display: block;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.about-section .quote-about {
+  font-style: italic;
+  color: #10b981;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+
   </style>
 </head>
 <body>
@@ -286,6 +338,22 @@
       </div>
     </div>
   </section>
+
+  <section class="about-section" id="about">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <p class="journey">
+      From curious tinkerer to code architect, my journey has always been driven by a desire to understand systems—technological, financial, and philosophical.
+    </p>
+    <p class="focus">
+      I specialize in building intelligent applications with a strong focus on Artificial Intelligence, Machine Learning, and Blockchain integration. Currently exploring how decentralized systems can reshape digital identity and commerce.
+    </p>
+    <p class="philosophy">
+      I believe code is modern alchemy—turning abstract ideas into reality. As Marcus Aurelius once said, <span class="quote-inline">“The impediment to action advances action. What stands in the way becomes the way.”</span>
+    </p>
+  </div>
+</section>
+
 
   <!-- Footer Section -->
 <footer class="footer">
