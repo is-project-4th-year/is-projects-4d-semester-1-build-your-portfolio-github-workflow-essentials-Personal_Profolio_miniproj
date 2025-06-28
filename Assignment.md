@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Nicole Moraa Angwenyi
+- **Admission Number**: 141786
+- **GitHub Username**: Nicoleangwenyi
+- **Email**: nicole.angwenyi@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
