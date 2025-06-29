@@ -72,6 +72,16 @@ header nav a:hover {
   background: #1e3a8a;
 }
 
+.section {
+  padding: 3rem 0;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   header .container {
@@ -89,5 +99,8 @@ header nav a:hover {
   }
   .hero p {
     font-size: 1rem;
+  }
+  .section h2 {
+    font-size: 1.5rem;
   }
 }
