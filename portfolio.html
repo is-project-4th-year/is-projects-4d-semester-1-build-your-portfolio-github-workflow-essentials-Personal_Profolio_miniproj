@@ -398,6 +398,91 @@
 }
 
 
+.projects-section {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.projects-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.projects-section h2::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #38bdf8;
+  display: block;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+.projects-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects-track {
+  display: flex;
+  animation: scroll-left 25s linear infinite;
+  gap: 2rem;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 280px;
+  max-width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive Pause on Hover (optional) */
+.projects-slider:hover .projects-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    min-width: 240px;
+  }
+}
 
   </style>
 </head>
@@ -528,6 +613,37 @@
     </div>
   </div>
 </section>
+
+<section class="projects-section" id="projects">
+  <div class="projects-container">
+    <h2>Projects</h2>
+    <div class="projects-slider">
+      <div class="projects-track">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <h3>ChatMeUp</h3>
+          <p>Android chat app using Firebase & Jetpack Compose. Real-time messaging with a smooth modern UI.</p>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <h3>AI Market Analyzer</h3>
+          <p>Analyzes stock trends with ML. Uses Python, Flask, and Matplotlib for visual insights.</p>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <h3>Mental Health App</h3>
+          <p>Flutter-based mobile app with quote APIs, news, and journal support. Mental wellness companion.</p>
+        </div>
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <h3>Football Match Predictor</h3>
+          <p>Predicts match outcomes using historical data & AI. Deployed with Node.js backend and ML models.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer Section -->
 <footer class="footer">
