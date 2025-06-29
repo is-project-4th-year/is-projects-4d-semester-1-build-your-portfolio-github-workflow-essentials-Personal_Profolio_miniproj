@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Maseno Alvin Nyanaro
+- **Admission Number**: 150356
+- **GitHub Username**: AlvinMaseno
+- **Email**: alvin.mase-@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
