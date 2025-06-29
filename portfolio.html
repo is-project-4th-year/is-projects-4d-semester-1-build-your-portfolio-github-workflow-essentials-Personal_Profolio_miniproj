@@ -305,6 +305,99 @@
   font-size: 1.1rem;
 }
 
+.edu-skills-section {
+  background-color: #f9fafb;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.edu-skills-container {
+  max-width: 1100px;
+  margin: auto;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.edu-skills-section h2 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.edu-skills-section h2::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #38bdf8;
+  display: block;
+  margin: 0.75rem auto 0;
+  border-radius: 2px;
+}
+
+.flip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.flip-card {
+  background: transparent;
+  perspective: 1000px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.flip-front {
+  background: #ffffff;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 4px solid #38bdf8;
+}
+
+.flip-front h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #1e40af;
+}
+
+.flip-back {
+  background: #38bdf8;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
 
   </style>
 </head>
@@ -354,6 +447,87 @@
   </div>
 </section>
 
+<section class="edu-skills-section" id="education-skills">
+  <div class="edu-skills-container">
+    <h2>Education & Skills</h2>
+    <div class="flip-grid">
+      <!-- Education Card -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h3>Bachelor's in Computer Science</h3>
+            <p>Mount Kenya University</p>
+          </div>
+          <div class="flip-back">
+            <p>Specialized in AI, Machine Learning, and Blockchain Development. Graduated with honors.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill Cards -->
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h3>JavaScript</h3>
+            <p>Frontend & Backend</p>
+          </div>
+          <div class="flip-back">
+            <p>React, Node.js, Express. Experience in full-stack projects and API integration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h3>Python</h3>
+            <p>Data & Automation</p>
+          </div>
+          <div class="flip-back">
+            <p>Flask, Pandas, NumPy, automation scripts, ML algorithms, web scraping.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h3>Flutter & Dart</h3>
+            <p>Mobile Dev</p>
+          </div>
+          <div class="flip-back">
+            <p>Built mobile apps with Firebase integration and smooth UI using Dart.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h3>MySQL</h3>
+            <p>Databases</p>
+          </div>
+          <div class="flip-back">
+            <p>Designing schemas, writing complex queries, CRUD operations in web apps.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <h3>Algorithimic Trading</h3>
+            <p>Statistics and Economics</p>
+          </div>
+          <div class="flip-back">
+            <p>Designing schemas, writing complex queries, CRUD operations in web apps.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Footer Section -->
 <footer class="footer">
