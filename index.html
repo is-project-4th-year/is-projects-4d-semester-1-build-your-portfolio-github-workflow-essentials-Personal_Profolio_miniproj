@@ -559,8 +559,125 @@
         <!-- Contact Section -->
         <section id="contact" class="contact">
             <div class="container">
-                <h2>Contact Me</h2>
-                <p>Contact form coming soon...</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-intro">
+                    <p>I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a conversation about technology. Feel free to reach out!</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <span>📧</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>makarawahome@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <span>💼</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>LinkedIn</h4>
+                                    <p>https://linkedin.com/in/elvis-makara-6a824b283</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <span>⚡</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>GitHub</h4>
+                                    <p>https://github.com/Pahom21</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <span>📍</span>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="availability">
+                            <h4>Availability</h4>
+                            <p>I'm currently available for:</p>
+                            <ul>
+                                <li>Freelance projects</li>
+                                <li>Internship opportunities</li>
+                                <li>Open source contributions</li>
+                                <li>Collaborative projects</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="job">Job Opportunity</option>
+                                    <option value="project">Project Inquiry</option>
+                                    <option value="freelance">Freelance Work</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project, opportunity, or just say hello!"></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    I'd like to receive updates about your latest projects and blog posts
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">
+                                    <span class="spinner"></span>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+
+                        <div class="form-success" id="formSuccess" style="display: none;">
+                            <div class="success-icon">✅</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
