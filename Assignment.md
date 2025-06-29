@@ -91,5 +91,7 @@ Caption: A pull request linked to the conflict section issue, commits, and succe
 ### E. Merge Conflict Resolution
 ```markdown
 ![Merge Conflict](merge-conflict-resolution.png)
+![Resolving conflict in VS](conflict-in-vs.png)
+![Resolved the conflict](resolved-conflict.png)
 Caption: Screenshot showing how I resolved a merge conflict between two branches editing the same About Me paragraph.
 ```
