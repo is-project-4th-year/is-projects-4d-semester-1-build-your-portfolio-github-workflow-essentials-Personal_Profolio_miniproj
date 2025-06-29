@@ -6,4 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Render user name
   document.getElementById('user-name').textContent = userData.name;
+  document.getElementById('hero-name').textContent = userData.name;
 });
