@@ -60,8 +60,129 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    setupContactForm();
 
 });
+
+// Contact Form Validation and Submission
+function setupContactForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    
+    const submitBtn = form.querySelector('.submit-btn');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+    const formSuccess = document.getElementById('formSuccess');
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        if (validateForm()) {
+            await submitForm();
+        }
+    });
+    
+    function validateForm() {
+        let isValid = true;
+        const fields = {
+            name: {
+                element: document.getElementById('name'),
+                error: document.getElementById('nameError'),
+                rules: [(value) => value.trim().length >= 2 || 'Name must be at least 2 characters long']
+            },
+            email: {
+                element: document.getElementById('email'),
+                error: document.getElementById('emailError'),
+                rules: [
+                    (value) => value.trim() !== '' || 'Email is required',
+                    (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || 'Please enter a valid email address'
+                ]
+            },
+            subject: {
+                element: document.getElementById('subject'),
+                error: document.getElementById('subjectError'),
+                rules: [(value) => value !== '' || 'Please select a subject']
+            },
+            message: {
+                element: document.getElementById('message'),
+                error: document.getElementById('messageError'),
+                rules: [(value) => value.trim().length >= 10 || 'Message must be at least 10 characters long']
+            }
+        };
+        
+        Object.keys(fields).forEach(fieldName => {
+            const field = fields[fieldName];
+            const value = field.element.value;
+            let fieldValid = true;
+            
+            // Clear previous errors
+            field.error.textContent = '';
+            field.element.classList.remove('error');
+            
+            // Run validation rules
+            for (let rule of field.rules) {
+                const result = rule(value);
+                if (result !== true) {
+                    field.error.textContent = result;
+                    field.element.classList.add('error');
+                    fieldValid = false;
+                    break;
+                }
+            }
+            
+            if (!fieldValid) {
+                isValid = false;
+            }
+        });
+        
+        return isValid;
+    }
+    
+    async function submitForm() {
+        // Show loading state
+        btnText.style.display = 'none';
+        btnLoading.style.display = 'inline-flex';
+        submitBtn.disabled = true;
+        
+        try {
+            // Simulate form submission (replace with actual submission logic)
+            await new Promise(resolve => setTimeout(resolve, 2000));
+            
+            // Hide form and show success message
+            form.style.display = 'none';
+            formSuccess.style.display = 'block';
+            
+            // Reset form after successful submission
+            form.reset();
+            
+        } catch (error) {
+            console.error('Form submission error:', error);
+            alert('There was an error sending your message. Please try again.');
+        } finally {
+            // Reset button state
+            btnText.style.display = 'inline';
+            btnLoading.style.display = 'none';
+            submitBtn.disabled = false;
+        }
+    }
+    
+    // Real-time validation
+    const inputs = form.querySelectorAll('input, select, textarea');
+    inputs.forEach(input => {
+        input.addEventListener('blur', () => {
+            validateForm();
+        });
+        
+        input.addEventListener('input', () => {
+            // Clear error state on input
+            const errorElement = document.getElementById(input.name + 'Error');
+            if (errorElement) {
+                errorElement.textContent = '';
+                input.classList.remove('error');
+            }
+        });
+    });
+}
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
