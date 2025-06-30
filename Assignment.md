@@ -85,8 +85,9 @@ This screenshot shows a milestone I created to track progress on the portfolio s
 - Screenshot showing your milestone(s) and the issues linked to it.
 
 ### B. Project Board
+![project board](https://github.com/user-attachments/assets/052ade40-072a-4e31-aca6-26e5e5353729)
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+- Here is my GitHub project board. I used columns like “To Do,” “In Progress,” and “Done” to visually manage the status of each task in the portfolio project.
 
 ### C. Branching
 
