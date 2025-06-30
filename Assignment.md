@@ -17,24 +17,65 @@
 Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
 For each one, mention:
 
-What you thought it would be like **(Expectation 👀)**
+---
 
-What you actually learned **(Reality 😅)**
+**1. Concept: Git Commands (Add, Commit, Push)**
 
-And how it helped with your personal portfolio project 💻
+- **Expectation**: I assumed I’d just memorize a few basic commands and be done with it—maybe use them once in a while when uploading a project.
 
-make it honest—and if it surprised you, even better!
+- **Reality**: Turns out, Git commands are *core tools* I need constantly. Even a small mistake like forgetting to stage before committing can mess things up.
 
-Example format:
+- **Impact**: I got comfortable using `git add`, `git commit`, and `git push` daily while working on my profile site, which made tracking changes and syncing my code to GitHub super smooth.
 
-**🧠 What I Thought I'd Learn vs What I Actually Learned**
+---
+
+**2. Concept: Merge Conflicts**
+
+- **Expectation**: I thought Git would magically handle merges and I wouldn’t need to worry about conflicts.
+
+- **Reality**: I found out that merge conflicts happen when multiple people (or branches) change the same part of a file. Git needs *you* to decide which changes to keep.
+
+- **Impact**: I faced a real conflict while editing an HTML file and learned how to manually resolve it. Now, I’m more confident dealing with collaborative code without fear of breaking things.
+
+---
+
+**3. Concept: Git Rebase**
+
+- **Expectation**: I had no clue what rebase was—just another scary Git word I thought only experts used.
+
+- **Reality**: I learned that `git rebase` helps keep a cleaner commit history by replaying my changes on top of another branch. It’s like “re-writing history” to make the timeline look smoother.
+
+- **Impact**: I used rebase to clean up a messy branch before merging it into the main branch of my portfolio project, which made the project history easier to understand.
+
+---
+
+**4. Concept: Writing Clear Commit Messages**
+
+- **Expectation**: I thought commit messages could be random or something like “stuff” or “fix 1”.
+
+- **Reality**: I learned that a good commit message helps others (and future me) understand what changed and why. It avoids confusion and improves collaboration.
+
+- **Impact**: I started writing clear, specific messages like `Add profile image section for Arthur` instead of vague ones. This made my contribution logs readable and professional.
+
+---
+
+**5. Concept: Repositories and Cloning**
+
+- **Expectation**: I thought "repo" just meant an online folder, and cloning was just downloading stuff.
+
+- **Reality**: A repository is a full Git project with tracked history. Cloning gives you a working copy *with Git tracking intact*, not just a zip file.
+
+- **Impact**: I was able to clone our team’s shared repo and push my contributions without messing up the main structure. Helped me collaborate better during the team profile project.
+
+---
+** What I Thought I'd Learn vs What I Actually Learned**
 **1. Concept: Branching**
 
-`Expectation 👀` : I thought branching was just for developers working on big apps—nothing I’d need for a small project.
+`Expectation` : I thought branching was just for developers working on big apps—nothing I’d need for a small project.
 
-`Reality 😅`: Turns out even solo devs need branches! It helped me avoid breaking my main code while testing new designs.
+`Reality`: Turns out even solo devs need branches! It helped me avoid breaking my main code while testing new designs.
 
-`Impact 💡`: I created a feature branch for my "About Me" section and merged it smoothly into the main branch after testing. Super useful!
+`Impact`: I created a feature branch for my "About Me" section and merged it smoothly into the main branch after testing. Super useful!
 
 ## 4. Screenshots of Key GitHub Features
 
