@@ -38,31 +38,41 @@ Example format:
 
 ## 4. Screenshots of Key GitHub Features
 
-Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
-
-> Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
-> (you could just simply copy and paste the image into the Assignment.md)
-
-```markdown
-![Caption](path/to/your/image.png)
-```
-
 ### A. Milestones and Issues
 
-- Screenshot showing your milestone(s) and the issues linked to it.
+![Screenshot showing milestones and linked issues](screenshots/milestones.png)
+
+*This screenshot shows how I created milestones to organize project phases and linked related issues to track progress.*
+
+---
 
 ### B. Project Board
 
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
+![Screenshot of GitHub Project Board with issues organized into columns](screenshots/project-board.png)
+
+*This screenshot shows the project board with columns for “To Do”, “In Progress”, and “Done” to visually track work items.*
+
+---
 
 ### C. Branching
 
-- Screenshot showing your branch list with meaningful naming.
+![Screenshot showing branch list with meaningful names](screenshots/branches.png)
+
+*This screenshot shows a list of branches with clear, meaningful names to support feature development and collaboration.*
+
+---
 
 ### D. Pull Requests
 
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
+![Screenshot of a pull request linked to an issue](screenshots/pull-request.png)
+
+*This screenshot shows a pull request that is properly linked to an issue, documenting the review and merge process.*
+
+---
 
 ### E. Merge Conflict Resolution
 
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+![Screenshot showing resolved merge conflict](screenshots/merge-conflict.png)
+
+*This screenshot shows how I resolved a merge conflict during a pull request merge, either using GitHub or a local tool.*
+
