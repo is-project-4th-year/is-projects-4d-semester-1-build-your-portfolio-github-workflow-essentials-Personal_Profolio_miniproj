@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**: Arthur Nyota
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Arthur Ng'ang'a Nyota
+- **Admission Number**: 150830
+- **GitHub Username**: nyota777
+- **Email**: arthur.nyota@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
