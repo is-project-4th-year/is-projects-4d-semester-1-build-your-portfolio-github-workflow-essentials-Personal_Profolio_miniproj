@@ -15,34 +15,66 @@
             max-width: 800px;
             margin: 40px auto;
             background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            padding: 32px 24px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(79,140,255,0.18), 0 4px 24px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.12);
+            padding: 40px 32px;
+            transition: box-shadow 0.3s;
         }
-        h1, h2 {
+        .container:hover {
+            box-shadow: 0 16px 48px rgba(79,140,255,0.22), 0 8px 32px rgba(0,0,0,0.16);
+        }
+        h1 {
             color: #2d3a4b;
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #4f8cff;
+            font-size: 1.5rem;
+            margin-bottom: 18px;
         }
         .student-details, .learnings {
-            margin-bottom: 32px;
+            margin-bottom: 40px;
         }
         .student-details ul {
             list-style: none;
             padding: 0;
         }
         .student-details li {
-            margin-bottom: 8px;
+            margin-bottom: 12px;
+            font-size: 1.08rem;
+            padding-left: 8px;
         }
         .learnings .learning-item {
-            margin-bottom: 24px;
-            padding: 16px;
-            background: #f8fafc;
-            border-left: 4px solid #4f8cff;
-            border-radius: 6px;
+            margin-bottom: 28px;
+            padding: 20px 18px 18px 18px;
+            background: linear-gradient(90deg, #f8fafc 80%, #eaf1ff 100%);
+            border-left: 5px solid #4f8cff;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(79,140,255,0.04);
+            transition: background 0.2s;
+        }
+        .learnings .learning-item:hover {
+            background: linear-gradient(90deg, #eaf1ff 80%, #f8fafc 100%);
         }
         .label {
             font-weight: bold;
             color: #4f8cff;
+            font-size: 1.1rem;
         }
+        @media (max-width: 600px) {
+            .container {
+                padding: 16px 4vw;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+        
     </style>
     
 </head>
