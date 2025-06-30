@@ -62,7 +62,7 @@ header{
 }
 
 section{
-    padding: 0 30%;
+    padding: 80px 7%;
 }
 
 .hero-text h1{
@@ -240,5 +240,62 @@ section{
     }
 }
 
+.about-section {
+        background: linear-gradient(245.59deg, #954d79 0%, #70385c 28.53%, #391338 75.52%);
 
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
 
+.about-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-card img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    max-width: 600px;
+}
+
+.text h2 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #ffd6f5;
+}
+
+.text p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #f9e1f4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-card.reverse {
+        flex-direction: column;
+    }
+
+    .about-card img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
