@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Nicole Moraa Angwenyi
+- **Admission Number**: 141786
+- **GitHub Username**: Nicoleangwenyi
+- **Email**: nicole.angwenyi@strathmore.edu
 
 ## 2. Deployed Portfolio Link
 
@@ -48,9 +48,8 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 ```
 
 ### A. Milestones and Issues
-
-- Screenshot showing your milestone(s) and the issues linked to it.
-
+![Milestones & issues](images/milestones.png)
+This is the nanding page milestone that has completed issues too.
 ### B. Project Board
 
 - Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
