@@ -68,14 +68,6 @@ For each one, mention:
 - **Impact**: I was able to clone our team’s shared repo and push my contributions without messing up the main structure. Helped me collaborate better during the team profile project.
 
 ---
-** What I Thought I'd Learn vs What I Actually Learned**
-**1. Concept: Branching**
-
-`Expectation` : I thought branching was just for developers working on big apps—nothing I’d need for a small project.
-
-`Reality`: Turns out even solo devs need branches! It helped me avoid breaking my main code while testing new designs.
-
-`Impact`: I created a feature branch for my "About Me" section and merged it smoothly into the main branch after testing. Super useful!
 
 ## 4. Screenshots of Key GitHub Features
 
