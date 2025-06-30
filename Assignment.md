@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Full Name**: Kevin Ndyabandiho
+- **Admission Number**: 122787
+- **GitHub Username**: kevinhun1
+- **Email**: needfspeed234@gmail.com
 
 ## 2. Deployed Portfolio Link
 
@@ -43,26 +43,29 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 > Upload the screenshots to your GitHub repository and reference them here using Markdown image syntax:
 > (you could just simply copy and paste the image into the Assignment.md)
 
+![Describes how i created the project called "Portfolio Page"](project_page.png)
+
 ```markdown
-![Caption](path/to/your/image.png)
+Above screenshot describes the creation of a project in github.
+```
+![Shows the issues created in the "Portfolio Page" project](issues.png)
+
+```markdown
+Above screenshot shows the issues created in the project.
+```
+![Shows the pull requests made](pullrequests.png)
+
+```markdown
+Above screenshot shows how pull requests were used to merge with the main branch.
+```
+![Shows all the milestones created. They are bound by time using a date.](milestones.png)
+
+```markdown
+Above screenshot show how milestones were used to complete the project.
 ```
 
-### A. Milestones and Issues
+![Visualizes the commits.](commits.png)
 
-- Screenshot showing your milestone(s) and the issues linked to it.
-
-### B. Project Board
-
-- Screenshot of your GitHub Project Board with issues organized into columns (e.g., To Do, In Progress, Done).
-
-### C. Branching
-
-- Screenshot showing your branch list with meaningful naming.
-
-### D. Pull Requests
-
-- Screenshot of a pull request that’s either open or merged and linked to a related issue.
-
-### E. Merge Conflict Resolution
-
-- Screenshot of a resolved merge conflict (in a pull request, commit history, or your local terminal/GitHub Desktop).
+```markdown
+Above screenshot visualizes the commit history.
+```
