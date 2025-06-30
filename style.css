@@ -180,7 +180,7 @@
     }
 
     .footer {
-  background-color: #111827;
+  background-color: #161e30;
   color: white;
   padding: 2rem 1rem;
   text-align: center;
@@ -257,7 +257,7 @@
 }
 
 .about-section {
-  background-color: #ffffff;
+  background-color: #cccccc;
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -270,7 +270,7 @@
 
 .about-section h2 {
   font-size: 2.5rem;
-  color: #111827;
+  color: #000000;
   margin-bottom: 1.5rem;
   position: relative;
 }
@@ -279,7 +279,7 @@
   content: '';
   width: 70px;
   height: 4px;
-  background-color: #38bdf8;
+  background-color: #388ef8;
   display: block;
   margin: 0.75rem auto 0;
   border-radius: 2px;
@@ -287,7 +287,7 @@
 
 .about-section p {
   font-size: 1.15rem;
-  color: #444;
+  color: #000000;
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
