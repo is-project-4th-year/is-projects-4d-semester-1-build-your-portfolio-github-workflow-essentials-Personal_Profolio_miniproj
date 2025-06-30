@@ -2,10 +2,10 @@
 
 ## 1. Student Details
 
-- **Full Name**:
-- **Admission Number**:
-- **GitHub Username**:
-- **Email**:
+- **Tom Ndemo**:
+- **150646**:
+- **TommyNdemoStrath**:
+- **tom.ndemo@strathmore.edu**:
 
 ## 2. Deployed Portfolio Link
 
