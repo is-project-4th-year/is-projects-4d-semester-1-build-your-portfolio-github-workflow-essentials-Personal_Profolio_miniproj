@@ -12,7 +12,7 @@
     }
 
     header {
-      background-color: #111827;
+      background-color: #131d30;
       color: white;
       padding: 1rem 2rem;
       position: sticky;
@@ -30,7 +30,7 @@
     .logo {
       font-size: 1.8rem;
       font-weight: bold;
-      color: #38bdf8;
+      color: #1a5acf;
     }
 
     .nav-links {
@@ -47,7 +47,8 @@
     }
 
     .nav-links a:hover {
-      color: #38bdf8;
+      color: #2368f3;
+      text-decoration: underline;
     }
 
     .nav-toggle {
@@ -380,8 +381,8 @@
 }
 
 .flip-back {
-  background: #38bdf8;
-  color: #ffffff;
+  background: #1f70d9;
+  color: #000000;
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
