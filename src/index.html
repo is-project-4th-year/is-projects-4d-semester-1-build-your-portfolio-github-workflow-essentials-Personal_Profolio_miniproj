@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio | Home</title>
+  
+  <!-- Typewriter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Courier Prime', monospace;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff9900;
+    }
+
+    header nav ul,
+    footer nav ul {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    header, footer {
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+
+    main {
+      margin-top: 30px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      color: #ffcc00;
+    }
+
+    h3 {
+      margin-top: 10px;
+      color: #00ffff;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 10px;
+      max-width: 600px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #ff9900;
+    }
+
+    footer p {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section>
+      <h1>Welcome to Austin Wangahu's Portfolio</h1>
+      <h2>Computer Science Major | Full Stack Developer</h2>
+      <p>I'm an enthusiastic geek 😄 with a passion for creating through code.</p>
+      <a class="cta" href="contact.html">Get in Touch</a>
+    </section>
+
+    <!-- Featured Skills Section -->
+    <section>
+      <h2>Core Skills</h2>
+      <ul>
+        <li>Frontend Development</li>
+        <li>Backend Development</li>
+        <li>Database Management</li>
+        <li>API Development</li>
+      </ul>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section>
+      <h2>Featured Projects</h2>
+      <article>
+        <h3>Mediconnect</h3>
+        <p>An emergency response web-based platform to link first responders to casualties.</p>
+        <a class="cta" href="projects.html">Learn More</a>
+      </article>
+
+      <article>
+        <h3>Project 2</h3>
+        <p>A brief description of another impactful project you're working on.</p>
+        <a class="cta" href="projects.html">Learn More</a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Austin Wangahu. All rights reserved.</p>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/ThigaAustin">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/AustinWangahu">LinkedIn</a></li>
+        <li><a href="mailto:austinwangahu@gmail.com">Email</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
