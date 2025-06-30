@@ -87,6 +87,7 @@ Closes #45
 
 Before submitting your project, ensure the following:
 
+- [ ] Applied the relevant branch protection rules on the main branch
 - [ ] Defined milestones for key features
 - [ ] Created and linked issues to milestones
 - [ ] Organized a GitHub project board (To Do / In Progress / Done)

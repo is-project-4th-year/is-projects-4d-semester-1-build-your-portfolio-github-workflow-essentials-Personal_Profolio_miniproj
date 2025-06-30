@@ -2,9 +2,11 @@
 
 ## 1. Student Details
 
-- **Full Name**: Brian Kyalo Muthama
-- **GitHub Username**: brian-kyalo
-- **Email**: brian.kyalo@strathmore.edu
+- **Full Name**: Brian Kyalo Muthama  
+- **Admission Number**: 150333  
+- **GitHub Username**: brian-kyalo  
+- **Email**: brian.kyalo@strathmore.edu  
+
 
 ## 2. Deployed Portfolio Link
 
@@ -13,7 +15,16 @@ https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essen
 
 ## 3. Learnings from the Git Crash Program
 
-List at least **four key concepts or skills** you learned during the Git crash course. For each one, write a brief explanation of how it helped you manage your portfolio project more effectively.
+Write about **4 things** you expected to learn during the Git crash course (yes, we all came in with some big hopes 😅).
+For each one, mention:
+
+What you thought it would be like **(Expectation 👀)**
+
+What you actually learned **(Reality 😅)**
+
+And how it helped with your personal portfolio project 💻
+
+make it honest—and if it surprised you, even better!
 
 - **Branching**:
 Helped me work on different sections of the portfolio (like header, about, contact) independently. Prevented code conflicts by isolating features in separate branches.
@@ -26,6 +37,15 @@ Pull Requests allowed me to review changes before merging them into the main bra
 
 - **Merge Conflict Resolution**:
 I encountered and resolved a merge conflict during styling updates. This taught me how to confidently handle conflicts in both GitHub and locally using VS Code.
+
+**🧠 What I Thought I'd Learn vs What I Actually Learned**  
+**1. Concept: Branching**
+
+`Expectation 👀` : I thought branching was just for developers working on big apps—nothing I’d need for a small project.
+
+`Reality 😅`: Turns out even solo devs need branches! It helped me avoid breaking my main code while testing new designs.
+
+`Impact 💡`: I created a feature branch for my "About Me" section and merged it smoothly into the main branch after testing. Super useful!
 
 
 ## 4. Screenshots of Key GitHub Features
