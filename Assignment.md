@@ -68,7 +68,6 @@ For each one, mention:
 - **Impact**: I was able to clone our team’s shared repo and push my contributions without messing up the main structure. Helped me collaborate better during the team profile project.
 
 ---
-
 ## 4. Screenshots of Key GitHub Features
 
 Include screenshots that demonstrate how you used GitHub to manage your project. For each screenshot, write a short caption explaining what it shows.
