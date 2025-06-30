@@ -80,7 +80,8 @@ Include screenshots that demonstrate how you used GitHub to manage your project.
 ```
 
 ### A. Milestones and Issues
-
+![Milestone creation](https://github.com/user-attachments/assets/dbcb5e1e-958f-4b47-9bcf-8dabd891c18c)
+This screenshot shows a milestone I created to track progress on the portfolio site. The linked issues represent different parts of the project like layout setup, About Me section, and contact form.
 - Screenshot showing your milestone(s) and the issues linked to it.
 
 ### B. Project Board
