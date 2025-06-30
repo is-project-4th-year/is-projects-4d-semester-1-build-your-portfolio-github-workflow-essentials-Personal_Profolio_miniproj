@@ -2,7 +2,7 @@
 
 ## 1. Student Details
 
-- **Full Name**:
+- **Full Name**: Arthur Nyota
 - **Admission Number**:
 - **GitHub Username**:
 - **Email**:
