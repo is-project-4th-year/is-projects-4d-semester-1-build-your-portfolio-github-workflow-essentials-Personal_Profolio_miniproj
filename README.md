@@ -96,5 +96,13 @@ Before submitting your project, ensure the following:
 - [ ] Deployed the portfolio online
 - [ ] Completed and updated the `Assignment.md` file which will be marked and graded
 
+## 🧪 Development Environment
+
+These are the tools I’m using to build and test this project:
+
+- **Editor**: VS Code
+- **Live Preview**: Live Server (VS Code extension)
+- **Version Control**: Git (CLI)
+- **Browser**: Chrome
 
 
