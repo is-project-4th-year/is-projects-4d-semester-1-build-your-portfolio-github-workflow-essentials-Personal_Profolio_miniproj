@@ -6,37 +6,43 @@
     <meta name="description" content="Professional portfolio showcasing my projects and skills">
     <title>Your Name | Portfolio</title>
     
-    <!-- Favicon (generate your own at https://favicon.io) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     
-    <!-- Font Awesome for icons (optional) -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Skip link for accessibility -->
     <a class="skip-link" href="#main-content">Skip to main content</a>
     
-    <!-- Header/Navigation -->
+    <!-- Header with Navigation Component -->
     <header class="header">
         <div class="container">
-            <nav class="navbar" aria-label="Main navigation">
-                <!-- Logo/Brand -->
-                <a href="/" class="logo">YourName</a>
-                
-                <!-- Mobile menu button -->
-                <button class="menu-toggle" aria-expanded="false" aria-label="Menu">
-                    <span class="hamburger"></span>
-                </button>
-                
-                <!-- Navigation links -->
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a href="/" class="logo">YourName</a>
+            
+            <!-- Mobile menu button -->
+            <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li>
+                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener" class="nav-icon">
+                            <img src="assets/github-icon.svg" alt="GitHub" width="24">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -53,11 +59,22 @@
             </div>
         </section>
 
-        <!-- Sections will be added later -->
-        <section id="about" class="section"></section>
-        <section id="projects" class="section"></section>
-        <section id="skills" class="section"></section>
-        <section id="contact" class="section"></section>
+        <!-- Content Sections -->
+        <section id="about" class="section">
+            <!-- About content goes here -->
+        </section>
+        
+        <section id="projects" class="section">
+            <!-- Projects content goes here -->
+        </section>
+        
+        <section id="skills" class="section">
+            <!-- Skills content goes here -->
+        </section>
+        
+        <section id="contact" class="section">
+            <!-- Contact content goes here -->
+        </section>
     </main>
 
     <!-- Footer -->
@@ -77,6 +94,17 @@
     <script>
         // Current year for footer
         document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle (could also be in external JS)
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        });
     </script>
 </body>
 </html>
